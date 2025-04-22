@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: coral;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
