@@ -99,6 +99,19 @@ function inventorySystemTest() {
   console.log(
     "Inventory Value Before Discount: $" + groceryStore.getInventoryValue()
   );
+
+  // 15% discount applied
+  ProductProperties.applyDiscount(groceryStore.inventory, 0.15);
+
+  // Log inventory with 15% discount
+  console.log(
+    "Inventory Value After 15% Discount: $" + groceryStore.getInventoryValue()
+  );
+
+  // finding specific product
+  const specificProduct = "Avocado Oil";
+  const foundProduct = groceryStore.findProductByName(specificProduct);
+  console.log("Found Product: " + foundProduct);
 }
 
 inventorySystemTest();
