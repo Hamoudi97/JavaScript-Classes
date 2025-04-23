@@ -81,4 +81,11 @@ function inventorySystemTest() {
   const creatine = new ProductProperties("Creatine Monohydrate", 20, 10);
   const honey = new ProductProperties("Royal Honey", 15, 5);
   const oil = new ProductProperties("Avocado Oil", 50, 45);
+  const milk = new PerishableProductProperties("Cow Milk", 8, 22, "05-05-2025");
+  const yogurt = new PerishableProductProperties(
+    "Fat Free 0%",
+    12,
+    13,
+    "01-06-2025"
+  );
 }
