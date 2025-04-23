@@ -6,12 +6,21 @@ class ProductProperties {
     this.quantity = quantity;
   }
 
+  // returns price x quantity
   getTotalValue() {
     return this.price * this.quantity;
   }
 
+  // returns information on the product
   toString() {
     return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
+  }
+
+  // applies discount to all products
+  static applyDiscount(products, discount) {
+    products.forEach((product) => {
+      product.price = product.price * (1 - discount);
+    });
   }
 }
 
@@ -37,3 +46,6 @@ const apple = new PerishableProductProperties(
 );
 
 const bread = new PerishableProductProperties("Sourdough", 5, 20, "30-04-2025");
+
+console.log(apple.toString());
+console.log(bread.toString());
