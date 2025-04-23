@@ -69,4 +69,9 @@ class Store {
       0
     );
   }
+
+  // Finds product by name
+  findProductByName(name) {
+    return this.inventory.find((prod) => prod.name === name) || null;
+  }
 }
