@@ -6,17 +6,17 @@ class ProductProperties {
     this.quantity = quantity;
   }
 
-  // returns price x quantity
+  // Returns price x quantity
   getTotalValue() {
     return this.price * this.quantity;
   }
 
-  // returns information on the product
+  // Returns information on the product
   toString() {
     return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
   }
 
-  // applies discount to all products
+  // Applies discount to all products
   static applyDiscount(products, discount) {
     products.forEach((product) => {
       product.price = product.price * (1 - discount);
@@ -31,13 +31,13 @@ class PerishableProductProperties extends ProductProperties {
     this.expirationDate = expirationDate;
   }
 
-  // overwritten toString method with expiry date
+  // Overwritten toString method with expiry date
   toString() {
     return `${super.toString()}, Expiration Date: ${this.expirationDate}`;
   }
 }
 
-//creating instances of perishable products
+// Creating instances of perishable products
 const apple = new PerishableProductProperties(
   "Honeycrisp",
   1.25,
@@ -55,5 +55,10 @@ console.log(bread.toString());
 class Store {
   constructor() {
     this.inventory = [];
+  }
+
+  // Adds product to inventory
+  addProduct(product) {
+    this.inventory.push(product);
   }
 }
