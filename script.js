@@ -94,4 +94,11 @@ function inventorySystemTest() {
   [creatine, honey, oil, milk, yogurt].forEach((prod) =>
     groceryStore.addProduct(prod)
   );
+
+  // Log inventory value before discount
+  console.log(
+    "Inventory Value Before Discount: $" + groceryStore.getInventoryValue()
+  );
 }
+
+inventorySystemTest();
