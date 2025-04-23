@@ -22,7 +22,16 @@ class PerishableProductProperties extends ProductProperties {
     this.expirationDate = expirationDate;
   }
 
+  // overwritten toString method with expiry date
   toString() {
     return `${super.toString()}, Expiration Date: ${this.expirationDate}`;
   }
 }
+
+//creating instances of perishable products
+const apple = new PerishableProductProperties(
+  "Honeycrisp",
+  1.25,
+  30,
+  "24-04-2025"
+);
