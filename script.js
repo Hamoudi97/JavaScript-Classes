@@ -1,4 +1,4 @@
-// Base Class
+// Base Class for Products
 
 class ProductProperties {
   constructor(name, price, quantity) {
@@ -9,5 +9,9 @@ class ProductProperties {
 
   getTotalValue() {
     return this.price * this.quantity;
+  }
+
+  toString() {
+    return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
   }
 }
