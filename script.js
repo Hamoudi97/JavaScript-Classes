@@ -2,8 +2,13 @@
 
 class ProductProperties {
   constructor(name, price, quantity) {
-    this.name = "Name of the product";
-    this.price = "Price of the product";
-    this.quantity = "Quantity available in stock";
+    this.name = name;
+    this.price = price;
+    this.quantity = quantity;
+  }
+
+  getTotalValue() {
+    let totalValue = this.price * this.quantity;
+    return totalValue;
   }
 }
