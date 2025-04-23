@@ -49,3 +49,11 @@ const bread = new PerishableProductProperties("Sourdough", 5, 20, "30-04-2025");
 
 console.log(apple.toString());
 console.log(bread.toString());
+
+//Store Class to manage inventory
+
+class Store {
+  constructor() {
+    this.inventory = [];
+  }
+}
