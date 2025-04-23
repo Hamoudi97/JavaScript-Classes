@@ -8,7 +8,6 @@ class ProductProperties {
   }
 
   getTotalValue() {
-    let totalValue = this.price * this.quantity;
-    return totalValue;
+    return this.price * this.quantity;
   }
 }
