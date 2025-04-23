@@ -75,3 +75,10 @@ class Store {
     return this.inventory.find((prod) => prod.name === name) || null;
   }
 }
+
+// Function to test if full store inventory system works
+function inventorySystemTest() {
+  const creatine = new ProductProperties("Creatine Monohydrate", 20, 10);
+  const honey = new ProductProperties("Royal Honey", 15, 5);
+  const oil = new ProductProperties("Avocado Oil", 50, 45);
+}
