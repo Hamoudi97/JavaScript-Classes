@@ -35,3 +35,5 @@ const apple = new PerishableProductProperties(
   30,
   "24-04-2025"
 );
+
+const bread = new PerishableProductProperties("Sourdough", 5, 20, "30-04-2025");
