@@ -88,4 +88,10 @@ function inventorySystemTest() {
     13,
     "01-06-2025"
   );
+
+  // new store instance
+  const groceryStore = new Store();
+  [creatine, honey, oil, milk, yogurt].forEach((prod) =>
+    groceryStore.addProduct(prod)
+  );
 }
